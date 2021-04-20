@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Registro de Comidas</string>
+
+    <string name="img">Logo</string>
+
+    <string name="b1">Nueva Comida</string>
+    <string name="b2">Buscar Comida</string>
+    <string name="b3">Ayuda</string>
+
+    <string name="b4">Guardar</string>
+    <string name="b5">Volver</string>
+    <string name="b6">Buscar</string>
+
+
+    <string name="etFechad">dd</string>
+    <string name="etFecham">mm</string>
+    <string name="etFechaa">aa</string>
+    <string name="etDesayuno">¿Qué desayunó?</string>
+    <string name="etAlmuerzo">¿Qué almorzó?</string>
+    <string name="etMerienda">¿Qué merendó?</string>
+    <string name="etCena">¿Qué cenó?</string>
+
+    <string name="tvComidas">Aquí verá lo que comió en la fecha ingresada</string>
+</resources>

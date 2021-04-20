@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoscomidas"
+    tools:context=".NuevaComida" >
+
+    <TextView
+        android:id="@+id/tvNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/b1"
+        android:textColor="#8D3D5B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/etFechad"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bordes_redondos"
+        android:gravity="center"
+        android:popupBackground="#FFEED3"
+        app:layout_constraintBottom_toTopOf="@+id/etDesayuno"
+        app:layout_constraintEnd_toStartOf="@+id/etFecham"
+        app:layout_constraintTop_toBottomOf="@+id/tvNC" />
+
+    <Spinner
+        android:id="@+id/etFecham"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bordes_redondos"
+        android:gravity="center"
+        android:popupBackground="#FFEED3"
+        app:layout_constraintBottom_toTopOf="@+id/etDesayuno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNC" />
+
+    <Spinner
+        android:id="@+id/etFechaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bordes_redondos"
+        android:gravity="center"
+        android:popupBackground="#FFEED3"
+        app:layout_constraintBottom_toTopOf="@+id/etDesayuno"
+        app:layout_constraintStart_toEndOf="@+id/etFecham"
+        app:layout_constraintTop_toBottomOf="@+id/tvNC" />
+
+    <EditText
+        android:id="@+id/etDesayuno"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/entrada_texto"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etDesayuno"
+        android:inputType="textMultiLine"
+        android:textColor="#8D3D5B"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNC" />
+
+    <EditText
+        android:id="@+id/etAlmuerzo"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/entrada_texto"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etAlmuerzo"
+        android:inputType="textMultiLine"
+        android:textColor="#8D3D5B"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDesayuno" />
+
+    <EditText
+        android:id="@+id/etMerienda"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/entrada_texto"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etMerienda"
+        android:inputType="textMultiLine"
+        android:textColor="#8D3D5B"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAlmuerzo" />
+
+    <EditText
+        android:id="@+id/etCena"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/entrada_texto"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etCena"
+        android:inputType="textMultiLine"
+        android:textColor="#8D3D5B"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMerienda" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordes_redondos"
+        android:fontFamily="serif-monospace"
+        android:onClick="Guardar"
+        android:text="@string/b4"
+        android:textColor="@drawable/texto_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCena" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
